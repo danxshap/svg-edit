@@ -303,7 +303,7 @@ svgEditor.addExtension("Connector", function(S) {
 		buttons: [{
 			id: "mode_connect",
 			type: "mode",
-			icon: "images/cut.png",
+			icon: curConfig.baseStaticUrl + "images/cut.png",
 			title: "Connect two objects",
 			includeWith: {
 				button: '#tool_line',

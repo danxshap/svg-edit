@@ -4067,6 +4067,7 @@ this.svgCanvasToString = function() {
 // Returns: 
 // String with the given element as an SVG tag
 this.svgToString = function(elem, indent) {
+    indent = 0
 	var out = [], 
 		toXml = svgedit.utilities.toXml;
 	var unit = curConfig.baseUnit;
@@ -4097,16 +4098,21 @@ this.svgToString = function(elem, indent) {
 // 				res.w += unit;
 // 				res.h += unit;
 // 			}
-			
+
 			if (unit !== "px") {
 				res.w = svgedit.units.convertUnit(res.w, unit) + unit;
 				res.h = svgedit.units.convertUnit(res.h, unit) + unit;
 			}
-			
+
+            // // DESIGN LAB HACK (to add essential attributes to the root svg element)
+            // var rootAttrString = ' width="' + res.w + '" height="' + res.h + '"' + vb + ' xmlns="'+svgns+'"';
+            // rootAttrString += ' viewBox="0 0 ' + res.w + ' ' + res.h +'"';
+            // rootAttrString += ' preserveAspectRatio="xMinYMin meet"';
+			// out.push(rootAttrString);
 			out.push(' width="' + res.w + '" height="' + res.h + '"' + vb + ' xmlns="'+NS.SVG+'"');
-			
+
 			var nsuris = {};
-			
+
 			// Check elements for namespaces, add if found
 			$(elem).find('*').andSelf().each(function() {
 				var el = this;
@@ -4196,7 +4202,7 @@ this.svgToString = function(elem, indent) {
 				var child = childs.item(i);
 				switch(child.nodeType) {
 				case 1: // element node
-					out.push("\n");
+					//out.push("\n");
 					out.push(this.svgToString(childs.item(i), indent));
 					break;
 				case 3: // text node
@@ -4207,14 +4213,14 @@ this.svgToString = function(elem, indent) {
 					}
 					break;
 				case 4: // cdata node
-					out.push("\n");
+					//out.push("\n");
 					out.push(new Array(indent+1).join(" "));
 					out.push("<![CDATA[");
 					out.push(child.nodeValue);
 					out.push("]]>");
 					break;
 				case 8: // comment
-					out.push("\n");
+					//out.push("\n");
 					out.push(new Array(indent+1).join(" "));
 					out.push("<!--");
 					out.push(child.data);
@@ -4224,7 +4230,7 @@ this.svgToString = function(elem, indent) {
 			}
 			indent--;
 			if (!bOneLine) {
-				out.push("\n");
+				//out.push("\n");
 				for (var i=0; i<indent; i++) out.push(" ");
 			}
 			out.push("</"); out.push(elem.nodeName); out.push(">");
