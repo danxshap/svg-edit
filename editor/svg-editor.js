@@ -608,6 +608,7 @@
 			var selectedElement = null;
 			var multiselected = false;
 			var editingsource = false;
+            var editingSourceSingle = false;
 			var docprops = false;
 			var preferences = false;
 			var cur_context = '';
@@ -1659,7 +1660,7 @@
 					$('#selLayerNames').removeAttr('disabled').val(currentLayerName);
 
 					// Enable regular menu options
-					canv_menu.enableContextMenuItems('#delete,#cut,#copy,#move_front,#move_up,#move_down,#move_back');
+					canv_menu.enableContextMenuItems('#delete,#cut,#copy,#move_front,#move_up,#move_down,#move_back,#edit_source');
 				} else {
 					$('#selLayerNames').attr('disabled', 'disabled');
 				}
@@ -2415,6 +2416,15 @@
 				}
 			};
 
+            var editSourceSelected = function(){
+				if (selectedElement != null) {
+                    showSelectedElementSourceEditor();
+                    // editingsource = true;
+                    // editingSourceSingle = true;
+                    // saveSourceEditor();
+				}
+            };
+
 			var convertToPath = function() {
 				if (selectedElement != null) {
 					svgCanvas.convertToPath();
@@ -2630,6 +2640,7 @@
 				if (editingsource) return;
 
 				editingsource = true;
+                editingSourceSingle = false;
 				origSource = svgCanvas.getSvgString();
 				$('#save_output_btns').toggle(!!forSaving);
 				$('#tool_source_back').toggle(!forSaving);
@@ -2637,6 +2648,17 @@
 				$('#svg_source_editor').fadeIn();
 				$('#svg_source_textarea').focus();
 			};
+
+            var showSelectedElementSourceEditor = function(e) {
+                if (editingsource) return;
+
+				editingsource = true;
+                editingSourceSingle = true;
+                origSource = svgCanvas.svgToString(selectedElement, 0);
+				$('#svg_source_textarea').val(origSource);
+				$('#svg_source_editor').fadeIn();
+				$('#svg_source_textarea').focus();
+            };
 
 			$('#svg_docprops_container, #svg_prefs_container').draggable({cancel: 'button,fieldset', containment: 'window'});
 
@@ -2701,14 +2723,23 @@
 					prepPaints();
 				};
 
-				if (!svgCanvas.setSvgString($('#svg_source_textarea').val())) {
-					$.confirm(uiStrings.notification.QerrorsRevertToSource, function(ok) {
-						if (!ok) return false;
-						saveChanges();
-					});
-				} else {
-					saveChanges();
-				}
+                var sourceString = $('#svg_source_textarea').val(), saveSuccess;
+
+                if(editingSourceSingle) {
+                    saveSuccess = svgCanvas.replaceElementWithSvgString(selectedElement, sourceString);
+                } else {
+                    saveSuccess = svgCanvas.setSvgString(sourceString);
+                }
+
+                if (!saveSuccess) {
+                    $.confirm(uiStrings.notification.QerrorsRevertToSource, function(ok) {
+                        if (!ok) return false;
+                        saveChanges();
+                    });
+                } else {
+                    saveChanges();
+                }
+
 				setSelectMode();
 			};
 
@@ -4139,6 +4170,9 @@
 						case 'move_back':
 							moveToBottomSelected();
 							break;
+                        case 'edit_source':
+                            editSourceSelected();
+                            break;
 						default:
 							if (svgedit.contextmenu && svgedit.contextmenu.hasCustomHandler(action)) {
 								svgedit.contextmenu.getCustomHandler(action).call();

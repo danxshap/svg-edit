@@ -4676,6 +4676,25 @@ var convertToGroup = this.convertToGroup = function(elem) {
 };
 
 //
+// Function: replaceElementWithSvgString
+// This function is a wrapper for setSvgString which first replaces
+// a specified element with new element(s) specified by the input SVG XML.
+//
+// Parameters:
+// element - The existing element to replace
+// xmlString - The SVG as XML text to replace the element specified in first param
+//
+// Returns:
+// This function returns false if the set was unsuccessful, true otherwise.
+this.replaceElementWithSvgString = function(element, xmlString) {
+    var replacementDoc = svgedit.utilities.text2xml(xmlString);
+    var selectedEl = selectedElements[0];
+    $(selectedEl).replaceWith(replacementDoc.documentElement);
+    var newSvgString = this.getSvgString();
+    return this.setSvgString(newSvgString);
+};
+
+//
 // Function: setSvgString
 // This function sets the current drawing as the input SVG XML.
 //
