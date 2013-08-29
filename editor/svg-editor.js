@@ -46,6 +46,7 @@
 					opacity: 1
 				},
 				initOpacity: 1,
+                baseStaticUrl: '',
 				imgPath: 'images/',
 				langPath: 'locale/',
 				extPath: 'extensions/',
