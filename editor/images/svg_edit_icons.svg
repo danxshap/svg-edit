@@ -37,9 +37,11 @@
 
 
 <g id="select">
-	<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-	  <path stroke="#ffffff" fill="#000000" id="svg_13" d="m7.38168,2.46948l0.07502,17.03258l3.30083,-2.62617l2.62566,5.62751l4.20105,-2.62617l-3.30082,-4.80214l4.57614,-0.37517l-11.47787,-12.23044z"/>
-	</svg>
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="30.666px" height="30.667px" viewBox="0 0 30.666 30.667" enable-background="new 0 0 30.666 30.667" xml:space="preserve">
+  <polygon fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" points="26.038,10.412 14.864,7.064 3.685,3.732 
+    7.019,14.912 10.365,26.088 15.7,19.189 23.132,26.62 26.852,22.848 19.479,15.475 "/>
+  </svg>
 </g>
 
 <g id="select_node">
@@ -62,15 +64,10 @@
 </g>
 
 <g id="rect">
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient y2="1" x2="1" y1="0.10156" x1="0.36328" id="svg_2">
-   <stop stop-opacity="1" stop-color="#ffffff" offset="0"/>
-   <stop stop-opacity="1" stop-color="#3b7e9b" offset="1"/>
-  </linearGradient>
- </defs>
-  <rect transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#000000" fill="url(#svg_2)" id="svg_1" height="12" width="20" y="5.5" x="1.5"/>
- </svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="38.25px" height="38px" viewBox="0 0 38.25 38" enable-background="new 0 0 38.25 38" xml:space="preserve">
+  <rect id="XMLID_20_" x="3.182" y="3.038" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" width="31.925" height="31.927"/>
+  </svg>
 </g>
 
 <g id="fh_rect">
@@ -95,31 +92,17 @@
 
 
 <g id="circle">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
- <defs>
-  <linearGradient y2="1.0" x2="1.0" y1="0.1875" x1="0.171875" id="svg_4">
-   <stop stop-opacity="1" stop-color="#ffffff" offset="0.0"/>
-   <stop stop-opacity="1" stop-color="#ff6666" offset="1.0"/>
-  </linearGradient>
- </defs>
- <g>
-  <circle stroke-opacity="1" fill-opacity="1" stroke-width="2" stroke="#000000" fill="url(#svg_4)" id="svg_1" r="23" cy="27" cx="27"/>
- </g>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="41.5px" height="41.75px" viewBox="0 0 41.5 41.75" enable-background="new 0 0 41.5 41.75" xml:space="preserve">
+  <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="20.893" cy="20.697" r="17.484"/>
+  </svg>
 </g>
 
 <g id="ellipse">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
- <defs>
-  <linearGradient y2="1.0" x2="1.0" y1="0.1875" x1="0.171875" id="svg_4">
-   <stop stop-opacity="1" stop-color="#ffffff" offset="0.0"/>
-   <stop stop-opacity="1" stop-color="#ff6666" offset="1.0"/>
-  </linearGradient>
- </defs>
- <g>
-  <ellipse stroke-opacity="1" fill-opacity="1" stroke-width="2" stroke="#000000" fill="url(#svg_4)" id="svg_1" rx="23" ry="15" cy="27" cx="27"/>
- </g>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="41.5px" height="41.75px" viewBox="0 0 41.5 41.75" enable-background="new 0 0 41.5 41.75" xml:space="preserve">
+  <circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="20.893" cy="20.697" r="17.484"/>
+  </svg>
 </g>
 
 <g id="fh_ellipse">
@@ -142,18 +125,16 @@
 </g>
 
 <g id="pencil">
-<svg viewBox="0 0 48 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-   <linearGradient id="svg_9" x1="0.3046" y1="0.1093" x2="0.6132" y2="0.3945">
-    <stop offset="0.0" stop-color="#f9d225" stop-opacity="1"/>
-    <stop offset="1.0" stop-color="#bf5f00" stop-opacity="1"/>
-   </linearGradient>
-  </defs>
-  <path d="M31.5,0 l-8.75,20.25 l0.75,24 l16.5,-16.5 l6,-12.5" id="svg_2" fill="url(#svg_9)" stroke="#000000" stroke-width="2" fill-opacity="1" stroke-opacity="1"/>
-  <path d="M39.5,28.5 c-2,-9.25 -10.25,-11.75 -17,-7.4375 l0.4843,24.4414z" id="svg_10" fill="#fce0a9" stroke="#000000" stroke-width="2" fill-opacity="1" stroke-opacity="1"/>
-  <path d="M26.9318,41.1745 c-0.4491,-2.3511 -2.3021,-2.9866 -3.8181,-1.8905 l0.1087,6.2126z" fill="#000000" stroke="#000000" stroke-width="2" fill-opacity="1" stroke-opacity="1" id="svg_11"/>
-  <path d="M2.3132,4.6197 c12.4998,-1.6891 10.4729,7.0945 0,21.6215 c22.9729,-4.0539 12.1620,5.4053 12.1620,13.1756 c-0.3377,4.0539 8.7836,21.9594 26.0135,-1.3513" id="svg_12" fill="none" stroke="#000000" stroke-width="2" fill-opacity="1" stroke-opacity="1"/>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="31.644px" height="31.644px" viewBox="0 0 31.644 31.644" enable-background="new 0 0 31.644 31.644" xml:space="preserve">
+  <path fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" d="M30.302,5.407l-4.063-4.064c-1.122-1.123-2.941-1.123-4.064,0
+    L3.958,19.559l-0.149,0.148L3.46,20.055c-0.582,0.584-0.957,1.322-1.088,2.141l-1.847,7.768c-0.076,0.324,0.021,0.664,0.256,0.898
+    c0.235,0.236,0.575,0.334,0.897,0.256l7.77-1.848c0.818-0.129,1.558-0.504,2.14-1.086l0.349-0.35l0.147-0.146L30.302,9.469
+    C31.424,8.348,31.424,6.528,30.302,5.407z M9.147,27.379l-0.071,0.012l-0.069,0.016L2.75,28.895l1.486-6.256l0.018-0.07l0.011-0.072
+    c0.043-0.266,0.137-0.506,0.27-0.725l5.338,5.336C9.655,27.243,9.413,27.336,9.147,27.379z M11.268,25.795l-5.418-5.42L20.141,6.086
+    l5.417,5.418L11.268,25.795z M28.948,8.116l-2.035,2.033l-5.418-5.418l2.035-2.033c0.373-0.375,0.981-0.375,1.354,0l4.064,4.062
+    C29.321,7.133,29.321,7.743,28.948,8.116z"/>
+  </svg>
 </g>
 
 <g id="pen">
@@ -176,12 +157,19 @@
 </g>
 
 <g id="text">
-	<svg viewBox="0 0 158 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	  <text x="58" y="120" id="svg_1" fill="#000000" stroke="none" font-size="120pt" font-family="sans-serif" text-anchor="middle" fill-opacity="1" stroke-opacity="1" font-weight="bold">A</text>
-	  <line x1="136" y1="7" x2="136" y2="121" id="svg_2" stroke="#000000" fill="none" fill-opacity="1" stroke-opacity="1" stroke-width="5"/>
-	  <line x1="120" y1="4" x2="152" y2="4" id="svg_3" stroke="#000000" stroke-width="5" fill="none" fill-opacity="1" stroke-opacity="1"/>
-	 <line x1="120" y1="124" x2="152" y2="124" stroke="#000000" stroke-width="5" fill="none" fill-opacity="1" stroke-opacity="1" id="svg_4"/>
-	</svg>
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="21.792px" height="27.75px" viewBox="0 0 21.792 27.75" enable-background="new 0 0 21.792 27.75" xml:space="preserve">
+  <g>
+    <path fill="#FFFFFF" d="M0.207,0.547h21.376v6.875h-1.937c-0.29-1.134-0.576-2.028-0.859-2.688
+      c-0.283-0.658-0.582-1.159-0.898-1.501c-0.317-0.343-0.656-0.587-1.018-0.732c-0.363-0.144-0.905-0.217-1.63-0.217h-2.51v20.229
+      c0,0.777,0.042,1.396,0.13,1.857c0.084,0.461,0.217,0.826,0.395,1.098c0.179,0.27,0.418,0.48,0.721,0.631
+      c0.304,0.152,0.777,0.301,1.422,0.445v0.967H6.37v-0.967c0.396-0.092,0.745-0.191,1.048-0.297s0.55-0.232,0.741-0.386
+      c0.189-0.151,0.349-0.345,0.474-0.583c0.125-0.236,0.223-0.559,0.297-0.968c0.072-0.407,0.107-1.007,0.107-1.798V2.285H6.548
+      c-0.619,0-1.13,0.06-1.531,0.178C4.615,2.582,4.244,2.828,3.901,3.204c-0.343,0.375-0.655,0.91-0.938,1.6
+      c-0.283,0.693-0.55,1.564-0.8,2.619H0.207V0.547z"/>
+  </g>
+  </svg>
+
 </g>
 
 
@@ -277,18 +265,25 @@
 </g>
 
 <g id="zoom">
-	<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	 <defs>
-	  <linearGradient id="svg_30" x1="0" y1="0" x2="1" y2="0">
-	   <stop offset="0" stop-color="#d3d3d3" stop-opacity="1"/>
-	   <stop offset="1" stop-color="#424242" stop-opacity="1"/>
-	  </linearGradient>
-	 </defs>
-	  <path d="m107.14774,101.03477l-0.64774,43.96523c5.00857,4.72089 14.00811,5.27188 19,0l-0.31667,-44.16l-9.61514,-19.84l-8.42046,20.03477z" id="svg_29" fill="url(#svg_30)" stroke="#202020" stroke-width="2" transform="rotate(-45, 116, 114)"/>
-	  <circle cx="58" cy="58" r="51" id="svg_22" fill="#c0c0c0" stroke="#202020" stroke-width="5"/>
-	  <circle cx="58" cy="58" r="43" id="svg_27" fill="#aaccff" stroke="none"/>
-	  <path d="m15.68604,61.46511c38.13954,17.67442 48.13954,15.34883 85.11628,-0.46511c1.39536,18.60465 -19.30231,41.86047 -42.7907,40.93023c-21.6279,-0.93023 -42.7907,-21.86046 -42.32558,-40.46511z" id="svg_28" fill="#8cbaff" stroke="none"/>
-	</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="33.25px" height="33.5px" viewBox="0 0 33.25 33.5" enable-background="new 0 0 33.25 33.5" xml:space="preserve">
+      <path fill="#FFFFFF" d="M29.521,32.414c-0.775,0-1.502-0.302-2.047-0.849l-7.696-7.695c-1.964,1.211-4.213,1.849-6.532,1.849
+        c-6.877,0-12.473-5.595-12.473-12.473c0-6.877,5.595-12.473,12.473-12.473c6.878,0,12.474,5.595,12.474,12.473
+        c0,2.319-0.638,4.568-1.849,6.53l7.697,7.696c0.547,0.547,0.849,1.275,0.849,2.049c-0.001,0.773-0.302,1.5-0.849,2.045
+        C31.022,32.113,30.295,32.414,29.521,32.414z M13.245,3.688c-5.27,0-9.557,4.288-9.557,9.559c0,5.27,4.287,9.557,9.557,9.557
+        c5.271,0,9.559-4.287,9.559-9.557C22.804,7.976,18.516,3.688,13.245,3.688z"/>
+      <path fill="#FFFFFF" d="M13.245,1.273c6.613,0,11.974,5.359,11.974,11.973c0,2.439-0.731,4.707-1.986,6.6l7.981,7.98
+        c0.936,0.936,0.936,2.453,0,3.387c-0.468,0.469-1.08,0.701-1.693,0.701c-0.612,0-1.226-0.232-1.692-0.701l-7.981-7.98
+        c-1.893,1.254-4.16,1.986-6.602,1.986c-6.611,0-11.973-5.361-11.973-11.973C1.272,6.633,6.634,1.273,13.245,1.273 M13.245,23.303
+        c5.546,0,10.059-4.512,10.059-10.057c0-5.547-4.513-10.059-10.059-10.059C7.7,3.188,3.188,7.699,3.188,13.246
+        C3.188,18.791,7.7,23.303,13.245,23.303 M29.521,30c0.091,0,0.223-0.025,0.338-0.141C29.976,29.742,30,29.611,30,29.52
+        c0-0.09-0.024-0.223-0.141-0.338l-7.816-7.816c-0.218,0.234-0.444,0.459-0.678,0.678l7.816,7.816
+        C29.299,29.975,29.431,30,29.521,30 M13.245,0.273c-7.153,0-12.973,5.819-12.973,12.973s5.819,12.973,12.973,12.973
+        c2.279,0,4.493-0.593,6.454-1.72l7.422,7.421c0.638,0.641,1.49,0.994,2.399,0.994c0.908,0,1.761-0.354,2.401-0.995
+        c0.64-0.639,0.993-1.49,0.994-2.396c0-0.908-0.354-1.762-0.995-2.403l-7.422-7.421c1.128-1.959,1.72-4.173,1.72-6.452
+        C26.219,6.093,20.398,0.273,13.245,0.273L13.245,0.273z M13.245,22.303c-4.994,0-9.057-4.063-9.057-9.057
+        c0-4.995,4.063-9.059,9.057-9.059c4.995,0,9.059,4.063,9.059,9.059C22.304,18.24,18.24,22.303,13.245,22.303L13.245,22.303z"/>
+  </svg>
 </g>
 
 <g id="arrow_right">
