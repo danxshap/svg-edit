@@ -748,9 +748,6 @@
 
 			// called when any element has changed
 			var elementChanged = function(window, elems) {
-				// Send a message to the parent window that something was changed
-				window.parent.postMessage('editorContentChanged', '*');
-
 				var mode = svgCanvas.getMode();
 				if (mode === 'select') {
 					setSelectMode();
