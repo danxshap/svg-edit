@@ -1634,7 +1634,7 @@
 						else if (el_name === 'g' || el_name === 'use') {
 							$('#container_panel').show();
 							var title = svgCanvas.getTitle();
-							var label = $('#g_title')[0];
+							var label = $('#g_title');
 							label.value = title;
 							setInputWidth(label);
 							label.prop('disabled', el_name == 'use');
