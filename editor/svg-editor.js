@@ -46,6 +46,7 @@
 					opacity: 1
 				},
 				initOpacity: 1,
+                baseStaticUrl: '',
 				imgPath: 'images/',
 				langPath: 'locale/',
 				extPath: 'extensions/',
@@ -67,7 +68,19 @@
 				gridColor: '#000',
 				baseUnit: 'px',
 				snappingStep: 10,
-				showRulers: true
+				showRulers: true,
+				palette: [
+				'#000000', '#3f3f3f', '#7f7f7f', '#bfbfbf', '#ffffff',
+				'#ff0000', '#ff7f00', '#ffff00', '#7fff00',
+				'#00ff00', '#00ff7f', '#00ffff', '#007fff',
+				'#0000ff', '#7f00ff', '#ff00ff', '#ff007f',
+				'#7f0000', '#7f3f00', '#7f7f00', '#3f7f00',
+				'#007f00', '#007f3f', '#007f7f', '#003f7f',
+				'#00007f', '#3f007f', '#7f007f', '#7f003f',
+				'#ffaaaa', '#ffd4aa', '#ffffaa', '#d4ffaa',
+				'#aaffaa', '#aaffd4', '#aaffff', '#aad4ff',
+				'#aaaaff', '#d4aaff', '#ffaaff', '#ffaad4'
+				]
 			},
 			uiStrings = Editor.uiStrings = {
 				common: {
@@ -167,6 +180,9 @@
 			$.extend(true, curConfig, opts);
 			if (opts.extensions) {
 				curConfig.extensions = opts.extensions;
+			}
+			if (opts.palette) {
+				curConfig.palette = opts.palette;
 			}
 		};
 
@@ -496,19 +512,8 @@
 
 			Editor.canvas = svgCanvas = new $.SvgCanvas(document.getElementById('svgcanvas'), curConfig);
 			Editor.showSaveWarning = false;
-			var palette = [
-				'#000000', '#3f3f3f', '#7f7f7f', '#bfbfbf', '#ffffff',
-				'#ff0000', '#ff7f00', '#ffff00', '#7fff00',
-				'#00ff00', '#00ff7f', '#00ffff', '#007fff',
-				'#0000ff', '#7f00ff', '#ff00ff', '#ff007f',
-				'#7f0000', '#7f3f00', '#7f7f00', '#3f7f00',
-				'#007f00', '#007f3f', '#007f7f', '#003f7f',
-				'#00007f', '#3f007f', '#7f007f', '#7f003f',
-				'#ffaaaa', '#ffd4aa', '#ffffaa', '#d4ffaa',
-				'#aaffaa', '#aaffd4', '#aaffff', '#aad4ff',
-				'#aaaaff', '#d4aaff', '#ffaaff', '#ffaad4'
-				],
-				modKey = (svgedit.browser.isMac() ? 'meta+' : 'ctrl+'), // ⌘
+			var palette = curConfig.palette;
+			var modKey = (svgedit.browser.isMac() ? 'meta+' : 'ctrl+'), // ⌘
 				path = svgCanvas.pathActions,
 				undoMgr = svgCanvas.undoMgr,
 				Utils = svgedit.utilities,
@@ -1629,7 +1634,7 @@
 						else if (el_name === 'g' || el_name === 'use') {
 							$('#container_panel').show();
 							var title = svgCanvas.getTitle();
-							var label = $('#g_title')[0];
+							var label = $('#g_title');
 							label.value = title;
 							setInputWidth(label);
 							label.prop('disabled', el_name == 'use');
