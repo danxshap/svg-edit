@@ -1338,11 +1338,11 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 			var griptype = elData(grip, "type");
 			// rotating
 			if (griptype == "rotate") {
-				current_mode = "rotate";
+				canvas.setMode("rotate");
 			}
 			// resizing
 			else if (griptype == "resize") {
-				current_mode = "resize";
+				canvas.setMode("resize");
 				current_resize_mode = elData(grip, "dir");
 			}
 			mouse_target = selectedElements[0];
