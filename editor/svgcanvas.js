@@ -4857,9 +4857,6 @@ this.setSvgString = function(xmlString) {
 		var changes = content.attr(["width", "height"]);
 		batchCmd.addSubCommand(new svgedit.history.ChangeElementCommand(svgroot, changes));
 
-		// reset zoom
-		current_zoom = 1;
-
 		// reset transform lists
 		svgedit.transformlist.resetListMap();
 		clearSelection();
