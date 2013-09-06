@@ -310,9 +310,27 @@ canvas.undoMgr = new svgedit.history.UndoManager({
 					canvas.identifyLayers();
 				}
 				if (cmdType == InsertElementCommand.type()) {
-					if (isApply) restoreRefElems(cmd.elem);
+					if (isApply){
+						restoreRefElems(cmd.elem);
+						// Designlab hack to get undo/redo working in conjunction with setSvgString
+						// See more info here: https://code.google.com/p/svg-edit/issues/detail?id=1138
+						if(cmd.elem.id == 'svgcontent'){
+							svgcontent = svgroot.getElementById('svgcontent');
+							canvas.current_drawing_ = new svgedit.draw.Drawing(svgcontent, idprefix);
+							canvas.current_drawing_.identifyLayers();
+						}
+					}
 				} else {
-					if (!isApply) restoreRefElems(cmd.elem);
+					if (!isApply){
+						restoreRefElems(cmd.elem);
+						// Designlab hack to get undo/redo working in conjunction with setSvgString
+						// See more info here: https://code.google.com/p/svg-edit/issues/detail?id=1138
+						if(cmd.elem.id == 'svgcontent'){
+							svgcontent = svgroot.getElementById('svgcontent');
+							canvas.current_drawing_ = new svgedit.draw.Drawing(svgcontent, idprefix);
+							canvas.current_drawing_.identifyLayers();
+						}
+					}
 				}
 				if (cmd.elem.tagName === 'use') {
 					setUseData(cmd.elem);
