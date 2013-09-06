@@ -1634,10 +1634,10 @@
 						else if (el_name === 'g' || el_name === 'use') {
 							$('#container_panel').show();
 							var title = svgCanvas.getTitle();
-							var label = $('#g_title');
+							var label = $('#g_title')[0];
 							label.value = title;
 							setInputWidth(label);
-							label.prop('disabled', el_name == 'use');
+							$(label).prop('disabled', el_name == 'use');
 						}
 					}
 					menu_items[(el_name === 'g' ? 'en' : 'dis') + 'ableContextMenuItems']('#ungroup');
