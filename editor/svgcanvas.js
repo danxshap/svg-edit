@@ -1619,7 +1619,7 @@ var getMouseTarget = this.getMouseTarget = function(evt) {
 						"stroke-width": cur_text.stroke_width,
 						"font-size": cur_text.font_size,
 						"font-family": cur_text.font_family,
-						"text-anchor": "middle",
+						"text-anchor": "start",
 						"xml:space": "preserve",
 						"opacity": cur_shape.opacity
 					}
