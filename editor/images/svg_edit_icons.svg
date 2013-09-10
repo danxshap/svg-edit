@@ -501,12 +501,13 @@
 </g>
 
 <g id="delete">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <rect ry="3" rx="3" stroke="#800000" fill="#aa0000" id="svg_37" height="20.29514" width="21.17486" y="1.70304" x="1.42011"/>
-  <rect ry="3" rx="3" stroke="#ff5555" fill="#aa0000" id="svg_67" height="18.63022" width="19.61118" y="2.53597" x="2.20258"/>
-  <line stroke-width="2" fill="none" stroke="#ffffff" id="svg_68" y2="16.85127" x2="17.00646" y1="6.85127" x1="7.00646"/>
-  <line stroke-width="2" id="svg_70" fill="none" stroke="#ffffff" y2="16.85127" x2="7.00646" y1="6.85127" x1="17.00646"/>
- </svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="32.875px" height="32.75px" viewBox="0 0 32.875 32.75" enable-background="new 0 0 32.875 32.75" xml:space="preserve">
+  <path fill="#676766" d="M32.528,29.375c0,1.65-1.351,3-3,3h-26c-1.65,0-3-1.35-3-3v-26c0-1.65,1.35-3,3-3h26c1.649,0,3,1.35,3,3
+    V29.375z"/>
+  <line fill="none" stroke="#D0D2D3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="25.014" y1="24.86" x2="8.042" y2="7.889"/>
+  <line fill="none" stroke="#D0D2D3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.043" y1="24.86" x2="25.014" y2="7.889"/>
+  </svg>
 </g>
 
 <g id="go_up">
@@ -546,37 +547,30 @@
 </g>
 
 <g id="move_bottom">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
- <defs>
-  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_80">
-   <stop stop-opacity="1" stop-color="#bc7f05" offset="0"/>
-   <stop stop-opacity="1" stop-color="#fcfc9f" offset="1"/>
-  </linearGradient>
- </defs>
-  <line stroke-width="2" fill="none" stroke="#000000" id="svg_72" y2="2.5" x2="22" y1="2.5" x1="10.5"/>
-  <line id="svg_73" stroke-width="2" fill="none" stroke="#000000" y2="6.5" x2="21.99844" y1="6.5" x1="10.49844"/>
-  <line id="svg_74" stroke-width="2" fill="none" stroke="#000000" y2="10.5" x2="21.99922" y1="10.5" x1="10.49922"/>
-  <line id="svg_75" stroke-width="2" fill="none" stroke="#000000" y2="14.5" x2="21.99922" y1="14.5" x1="10.49922"/>
-  <rect stroke="#000000" fill="url(#svg_80)" id="svg_77" height="2.2" width="20" y="17.65" x="1.65"/>
-  <path stroke="none" fill="#000000" id="svg_81" d="m4.25,1.55l2.35,0l0,11.05l2,0l-3.175,3.45l-3.175,-3.45l2,0l0,-11.05z"/>
- </svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50.25px" height="49.875px" viewBox="0 0 50.25 49.875" enable-background="new 0 0 50.25 49.875" xml:space="preserve">
+  <path fill="#404041" d="M47,9.409c1.101,0,2-0.9,2-2v-4c0-1.1-0.899-2-2-2H22.466c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2H47z"/>
+  <path fill="#404041" d="M47,22.897c1.101,0,2-0.9,2-2v-4c0-1.1-0.899-2-2-2H22.466c-1.1,0-2,0.9-2,2v4c0,1.1,0.9,2,2,2H47z"/>
+  <path fill="#404041" d="M47,36.386c1.101,0,2-0.899,2-2v-4c0-1.1-0.899-2-2-2H22.466c-1.1,0-2,0.9-2,2v4c0,1.101,0.9,2,2,2H47z"/>
+  <path fill="#D0D2D3" d="M47,48.875c1.101,0,2-0.9,2-2v-2c0-1.101-0.899-2-2-2H3c-1.101,0-2,0.899-2,2v2c0,1.1,0.899,2,2,2H47z"/>
+  <path fill="#676766" d="M12.043,26.731V3.409c0-1.1-0.899-2-2-2h-2.83c-1.101,0-2,0.9-2,2v23.323l-0.015,2H3.213H2.136
+    c-1.1,0-1.465,0.724-0.811,1.607l6.113,8.273c0.654,0.885,1.724,0.885,2.377,0l6.11-8.272c0.654-0.885,0.288-1.608-0.812-1.608
+    h-1.071h-2.032l0.032-1.957l-0.032,1.834l0.032-25.2"/>
+  </svg>
 </g>
 
 <g id="move_top">
-<svg viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="svg_86" x1="0" y1="0" x2="1" y2="0">
-   <stop offset="0" stop-color="#9fdcf4" stop-opacity="1"/>
-   <stop offset="1" stop-color="#617e96" stop-opacity="1"/>
-  </linearGradient>
- </defs>
-  <line x1="1.3" y1="8.19922" x2="12.8" y2="8.19922" id="svg_72" stroke="#000000" fill="none" stroke-width="2"/>
-  <line x1="1.29844" y1="12.19922" x2="12.79844" y2="12.19922" stroke="#000000" fill="none" stroke-width="2" id="svg_73"/>
-  <line x1="1.29922" y1="16.19922" x2="12.79922" y2="16.19922" stroke="#000000" fill="none" stroke-width="2" id="svg_74"/>
-  <line x1="1.29922" y1="20.19922" x2="12.79922" y2="20.19922" stroke="#000000" fill="none" stroke-width="2" id="svg_75"/>
-  <rect x="1.55" y="1.85" width="20" height="3.2" id="svg_77" fill="url(#svg_86)" stroke="#000000"/>
-  <path d="m16.83475,21.14603l2.33207,0l0,-11.04578l1.98474,0l-3.15077,-3.44869l-3.15077,3.44869l1.98474,0l0,11.04578z" id="svg_81" fill="#000000" stroke="none"/>
- </svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="49.875px" viewBox="0 0 50 49.875" enable-background="new 0 0 50 49.875" xml:space="preserve">
+  <path fill="#404041" d="M2.875,40.217c-1.101,0-2,0.9-2,2v4c0,1.1,0.899,2,2,2h24.534c1.1,0,2-0.9,2-2v-4c0-1.1-0.9-2-2-2H2.875z"/>
+  <path fill="#404041" d="M2.875,26.727c-1.101,0-2,0.9-2,2v4c0,1.102,0.899,2,2,2h24.534c1.1,0,2-0.898,2-2v-4c0-1.1-0.9-2-2-2H2.875
+    z"/>
+  <path fill="#404041" d="M2.875,13.238c-1.101,0-2,0.9-2,2v4c0,1.1,0.899,2,2,2h24.534c1.1,0,2-0.9,2-2v-4c0-1.1-0.9-2-2-2H2.875z"/>
+  <path fill="#D0D2D3" d="M2.875,0.75c-1.101,0-2,0.9-2,2v2c0,1.1,0.899,2,2,2h44c1.101,0,2-0.9,2-2v-2c0-1.1-0.899-2-2-2H2.875z"/>
+  <path fill="#676766" d="M44.667,22.894v23.323c0,1.1-0.9,2-2,2h-2.83c-1.1,0-2-0.9-2-2V22.894l-0.014-2h-1.986h-1.076
+    c-1.101,0-1.466-0.724-0.812-1.608l6.114-8.273c0.654-0.885,1.723-0.885,2.377,0l6.109,8.272c0.654,0.885,0.289,1.609-0.812,1.609
+    h-1.071h-2.031l0.031,1.956l-0.031-1.833l0.031,25.2"/>
+  </svg>
 </g>
 
 <g id="to_path">
@@ -624,49 +618,31 @@
 </g>
 
 <g id="group">
-<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="svg_90" x1="0" y1="0" x2="1" y2="1">
-   <stop offset="0" stop-color="#ccddff" stop-opacity="1"/>
-   <stop offset="1" stop-color="#789fed" stop-opacity="1"/>
-  </linearGradient>
-  <linearGradient id="svg_92" x1="0" y1="0" x2="1" y2="1">
-   <stop offset="0" stop-color="#70a1e5" stop-opacity="1"/>
-   <stop offset="1" stop-color="#4b6baf" stop-opacity="1"/>
-  </linearGradient>
- </defs>
-  <rect x="13.5" y="0.5" width="2" height="2" fill="#a0a0a0" stroke="#555555" id="svg_79"/>
-  <rect x="13.5" y="13.5" width="2" height="2" fill="#a0a0a0" stroke="#555555" id="svg_82"/>
-  <rect x="0.5" y="13.5" width="2" height="2" fill="#a0a0a0" stroke="#555555" id="svg_83"/>
-  <rect x="2.5" y="2.5" width="8" height="7" fill="#a0a0a0" stroke="#555555" id="svg_85"/>
-  <rect x="2.5" y="2.5" width="8" height="7" fill="url(#svg_90)" stroke="url(#svg_92)" id="svg_87"/>
-  <rect x="5.5" y="6.5" width="8" height="7" id="svg_84" fill="#7399d6" stroke="url(#svg_92)"/>
-  <rect x="0.5" y="0.5" width="2" height="2" id="svg_78" fill="#a0a0a0" stroke="#555555"/>
- </svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="52.933px" height="51.667px" viewBox="5.5 2.5 52.933 51.667" enable-background="new 5.5 2.5 52.933 51.667"
+     xml:space="preserve">
+  <path fill="#676766" d="M37.341,32.75c0,1.242-1.015,2.26-2.26,2.26H19.26c-1.243,0-2.26-1.018-2.26-2.26V16.928
+    c0-1.243,1.017-2.26,2.26-2.26h15.821c1.245,0,2.26,1.017,2.26,2.26V32.75z"/>
+  <rect x="49.5" y="4.167" fill="#676766" width="6" height="6"/>
+  <rect x="49.5" y="46.167" fill="#676766" width="6" height="6"/>
+  <rect x="7.5" y="4.167" fill="#676766" width="6" height="6"/>
+  <rect x="7.5" y="46.167" fill="#676766" width="6" height="6"/>
+  <path fill="#A6A8AB" d="M47.875,40.542c0,1.656-1.344,3-3,3h-15.75c-1.656,0-3-1.344-3-3v-15.75c0-1.657,1.344-3,3-3h15.75
+    c1.656,0,3,1.343,3,3V40.542z"/>
+  </svg>
 </g>
 
 <g id="ungroup">
-<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <linearGradient id="svg_90" x1="0" y1="0" x2="1" y2="1">
-   <stop offset="0" stop-color="#ccddff" stop-opacity="1"/>
-   <stop offset="1" stop-color="#789fed" stop-opacity="1"/>
-  </linearGradient>
-  <linearGradient id="svg_92" x1="0" y1="0" x2="1" y2="1">
-   <stop offset="0" stop-color="#70a1e5" stop-opacity="1"/>
-   <stop offset="1" stop-color="#4b6baf" stop-opacity="1"/>
-  </linearGradient>
- </defs>
-  <rect x="2.5" y="2.5" width="8" height="7" fill="url(#svg_90)" stroke="url(#svg_92)" id="svg_87"/>
-  <rect x="5.5" y="6.5" width="8" height="7" id="svg_84" fill="#7399d6" stroke="url(#svg_92)"/>
-  <rect x="9.5" y="1.5" width="2" height="2" fill="#a0a0a0" stroke="#555555" id="svg_79"/>
-  <rect x="1.5" y="8.5" width="2" height="2" fill="#a0a0a0" stroke="#555555" id="svg_83"/>
-  <rect x="1.5" y="1.5" width="2" height="2" id="svg_78" fill="#a0a0a0" stroke="#555555"/>
-  <rect id="svg_93" x="12.5" y="5.5" width="2" height="2" fill="#a0a0a0" stroke="#555555"/>
-  <rect id="svg_94" x="12.5" y="12.5" width="2" height="2" fill="#a0a0a0" stroke="#555555"/>
-  <rect id="svg_95" x="4.5" y="12.5" width="2" height="2" fill="#a0a0a0" stroke="#555555"/>
-  <rect id="svg_96" x="4.5" y="5.5" width="2" height="2" fill="#a0a0a0" stroke="#555555"/>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="51.667px" height="51.667px" viewBox="5.856 3.504 51.667 51.667" enable-background="new 5.856 3.504 51.667 51.667"
+     xml:space="preserve">
+  <path fill="#676766" d="M35.433,31.49c0,1.1-0.899,2-2,2h-14c-1.1,0-2-0.9-2-2v-14c0-1.1,0.9-2,2-2h14c1.101,0,2,0.9,2,2V31.49z"/>
+  <rect x="28.433" y="24.489" fill="none" stroke="#A6A8AB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="18" height="18"/>
+  <rect x="49.933" y="4.989" fill="#676766" width="6" height="6"/>
+  <rect x="49.933" y="46.99" fill="#676766" width="6" height="6"/>
+  <rect x="7.933" y="4.989" fill="#676766" width="6" height="6"/>
+  <rect x="7.933" y="46.99" fill="#676766" width="6" height="6"/>
+  </svg>
 </g>
 
 <g id="unlink_use">
@@ -726,10 +702,12 @@
 </g>
 
 <g id="fontsize">
-<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-  <text fill="#606060" stroke="none" x="14.451" y="41.4587" id="svg_2" font-size="26" font-family="serif" text-anchor="middle">T</text>
-  <text fill="#000000" stroke="none" x="28.853" y="41.8685" font-size="52" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_3">T</text>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="42.25px" height="28.25px" viewBox="55.583 27.083 42.25 28.25" enable-background="new 55.583 27.083 42.25 28.25"
+     xml:space="preserve">
+  <text transform="matrix(1 0 0 1 71.2612 53.9224)" fill="#676766" font-family="'Baskerville-SemiBold'" font-size="37.4979">T</text>
+  <text transform="matrix(1 0 0 1 57.0757 53.9243)" fill="#404041" font-family="'Baskerville-SemiBold'" font-size="24.9986">T</text>
+  </svg>
 </g>
 
 <g id="align">
@@ -741,69 +719,57 @@
 </g>
 
 <g id="align_left">
-	<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-	  <rect stroke="#606060" fill="#ffffff" id="svg_4" height="7" width="12" y="2.5" x="2.5"/>
-	  <rect stroke="none" fill="#c0c0c0" id="svg_5" height="4" width="11" y="4" x="2"/>
-	  <rect id="svg_6" stroke="#606060" fill="#ffffff" height="7" width="18" y="12.5" x="2.5"/>
-	  <rect id="svg_7" stroke="none" fill="#c0c0c0" height="4" width="17" y="14" x="2"/>
-	  <rect stroke="#c15909" fill="#ef9a23" id="svg_2" height="40" width="2" y="-10" x="1.5"/>
-	</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="54.999px" viewBox="0 0 50 54.999" enable-background="new 0 0 50 54.999" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.484" y1="52" x2="3.484" y2="4"/>
+  <path fill="#676766" d="M33.019,22c0,1.1-0.899,2-2,2h-20c-1.1,0-2-0.9-2-2V11c0-1.1,0.9-2,2-2h20c1.101,0,2,0.9,2,2V22z"/>
+  <rect x="10.337" y="30" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.364" height="15"/>
+  </svg>
 </g>
 
 <g id="align_center">
-	<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	  <rect x="1.5" y="12.5" width="18" height="7" fill="#c0c0c0" stroke="#606060" id="svg_6"/>
-	  <rect x="4.5" y="2.5" width="12" height="7" id="svg_4" fill="#c0c0c0" stroke="#606060"/>
-	  <rect x="9.5" y="-10" width="2" height="40" id="svg_2" fill="#ef9a23" stroke="#c15909"/>
-	  <rect x="2.5" y="13.5" width="16" height="5" fill="none" stroke="#ffffff" id="svg_7"/>
-	  <rect x="5.5" y="3.5" width="10" height="5" id="svg_5" fill="none" stroke="#ffffff"/>
-	</svg>
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="55px" viewBox="0 0 50 55" enable-background="new 0 0 50 55" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="24.863" y1="52" x2="24.863" y2="4"/>
+  <path fill="#676766" d="M36.863,22c0,1.1-0.9,2-2,2h-20c-1.1,0-2-0.9-2-2V11c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2V22z"/>
+  <rect x="6.181" y="30" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.364" height="15"/>
+  </svg>
 </g>
 
 <g id="align_right">
-	<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	  <rect x="7.5" y="2.5" width="12" height="7" id="svg_4" fill="#ffffff" stroke="#606060"/>
-	  <rect x="9" y="4" width="11" height="4" id="svg_5" fill="#c0c0c0" stroke="none"/>
-	  <rect x="1.5" y="12.5" width="18" height="7" fill="#ffffff" stroke="#606060" id="svg_6"/>
-	  <rect x="3" y="14" width="17" height="4" fill="#c0c0c0" stroke="none" id="svg_7"/>
-	  <rect x="18.5" y="-10" width="2" height="40" id="svg_2" fill="#ef9a23" stroke="#c15909"/>
-	</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="55px" viewBox="0 0 50 55" enable-background="new 0 0 50 55" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="47.467" y1="52" x2="47.467" y2="4"/>
+  <rect x="3.25" y="30" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="37.364" height="15"/>
+  <path fill="#676766" d="M41.932,22c0,1.1-0.9,2-2,2h-20c-1.1,0-2-0.9-2-2V11c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2V22z"/>
+  </svg>
 </g>
 
 <g id="align_top">
-	<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	  <g transform="rotate(90, 11, 11)" id="svg_1">
-	   <rect x="2.5" y="3.5" width="12" height="7" id="svg_4" fill="#ffffff" stroke="#606060"/>
-	   <rect x="2" y="5" width="11" height="4" id="svg_5" fill="#c0c0c0" stroke="none"/>
-	   <rect x="2.5" y="13.5" width="18" height="7" fill="#ffffff" stroke="#606060" id="svg_6"/>
-	   <rect x="2" y="15" width="17" height="4" fill="#c0c0c0" stroke="none" id="svg_7"/>
-	   <rect x="1.5" y="-9" width="2" height="40" id="svg_2" fill="#ef9a23" stroke="#c15909"/>
-	  </g>
-	</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="55px" viewBox="0 0 50 55" enable-background="new 0 0 50 55" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.775" y1="6.891" x2="49.775" y2="6.891"/>
+  <path fill="#676766" d="M31.775,36.425c-1.101,0-2-0.9-2-2v-20c0-1.1,0.899-2,2-2h11c1.1,0,2,0.9,2,2v20c0,1.1-0.9,2-2,2H31.775z"/>
+  <rect x="8.775" y="13.744" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="15" height="37.363"/>
+  </svg>
 </g>
 
 <g id="align_middle">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-  <g transform="rotate(90, 12, 11.5)" id="svg_1">
-   <rect id="svg_6" stroke="#606060" fill="#c0c0c0" height="7" width="18" y="14" x="3"/>
-   <rect stroke="#606060" fill="#c0c0c0" id="svg_4" height="7" width="12" y="4" x="6"/>
-   <rect stroke="#c15909" fill="#ef9a23" id="svg_2" height="40" width="2" y="-8.5" x="11"/>
-   <rect id="svg_7" stroke="#ffffff" fill="none" height="5" width="16" y="15" x="4"/>
-   <rect stroke="#ffffff" fill="none" id="svg_5" height="5" width="10" y="5" x="7"/>
-   </g>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="55px" viewBox="0 0 50 55" enable-background="new 0 0 50 55" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.545" y1="28" x2="49.545" y2="28"/>
+  <path fill="#676766" d="M31.545,40c-1.1,0-2-0.9-2-2V18c0-1.1,0.9-2,2-2h11c1.101,0,2,0.9,2,2v20c0,1.1-0.899,2-2,2H31.545z"/>
+  <rect x="8.545" y="9.317" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="15" height="37.366"/>
+  </svg>
 </g>
 
 <g id="align_bottom">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-  <g transform="rotate(90, 11, 11)" id="svg_1">
-   <rect stroke="#606060" fill="#ffffff" id="svg_4" height="7" width="12" y="2.5" x="7.5"/>
-   <rect stroke="none" fill="#c0c0c0" id="svg_5" height="4" width="11" y="4" x="9"/>
-   <rect id="svg_6" stroke="#606060" fill="#ffffff" height="7" width="18" y="12.5" x="1.5"/>
-   <rect id="svg_7" stroke="none" fill="#c0c0c0" height="4" width="17" y="14" x="3"/>
-   <rect stroke="#c15909" fill="#ef9a23" id="svg_2" height="40" width="2" y="-10" x="18.5"/>
-   </g>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="50px" height="55px" viewBox="0 0 50 55" enable-background="new 0 0 50 55" xml:space="preserve">
+  <line fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.04" y1="50.108" x2="50.04" y2="50.108"/>
+  <path fill="#676766" d="M32.04,20.574c-1.1,0-2,0.9-2,2v20c0,1.1,0.9,2,2,2h11c1.1,0,2-0.9,2-2v-20c0-1.1-0.9-2-2-2H32.04z"/>
+  <rect x="9.04" y="5.892" fill="none" stroke="#676766" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="15" height="37.364"/>
+  </svg>
 </g>
 
 <g id="linecap_butt">
