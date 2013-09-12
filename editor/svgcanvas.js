@@ -2711,6 +2711,7 @@ var textActions = canvas.textActions = function() {
 		select: function(target, x, y) {
 			curtext = target;
 			textActions.toEditMode(x, y);
+            selectAll();
 		},
 		start: function(elem) {
 			curtext = elem;
