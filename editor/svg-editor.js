@@ -3878,8 +3878,10 @@
 					{key: 'shift+P', fn: selectNext},
 					{key: [modKey+'up', true], fn: function(){zoomImage(2);}},
 					{key: [modKey+'down', true], fn: function(){zoomImage(.5);}},
-					{key: [modKey+']', true], fn: function(){moveUpDownSelected('Up');}},
-					{key: [modKey+'[', true], fn: function(){moveUpDownSelected('Down');}},
+					// On Mac - these are for some reason triggering JUST by pressing command (i.e. not with "]")
+					//          and furthermore only after going into text edit mode? Very strange - removing for now.
+					// {key: [modKey+']', true], fn: function(){moveUpDownSelected('Up');}},
+					// {key: [modKey+'[', true], fn: function(){moveUpDownSelected('Down');}},
 					{key: ['up', true], fn: function(){moveSelected(0,-1);}},
 					{key: ['down', true], fn: function(){moveSelected(0,1);}},
 					{key: ['left', true], fn: function(){moveSelected(-1,0);}},
