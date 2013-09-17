@@ -122,7 +122,7 @@ $.fn.SpinButton = function(cfg){
 
 			var direction =
 				(x > coord(el,'offsetLeft') + el.offsetWidth*scale - this.spinCfg._btn_width)
-				? ((y < coord(el,'offsetTop') + height*scale) ? 1 : -1) : 0;
+				? ((y < coord(el,'offsetTop') + height*scale + 5) ? 1 : -1) : 0;
 
 			if (direction !== this.spinCfg._direction) {
 				// Style up/down buttons:
