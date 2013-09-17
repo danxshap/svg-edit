@@ -46,7 +46,8 @@
 					opacity: 1
 				},
 				initOpacity: 1,
-                baseStaticUrl: '',
+				baseStaticUrl: '',
+				iconFilePath: null,
 				imgPath: 'images/',
 				langPath: 'locale/',
 				extPath: 'extensions/',
@@ -312,7 +313,10 @@
 			} else {
 				extFunc();
 			}
-			$.svgIcons(curConfig.imgPath + 'svg_edit_icons.svg', {
+			// Default icon path but allow override
+			var iconPath = curConfig.imgPath + 'svg_edit_icons.svg';
+			iconPath = (curConfig.iconFilePath !== null) ? curConfig.iconFilePath : iconPath;
+			$.svgIcons(iconPath, {
 				w:24, h:24,
 				id_match: false,
 				no_img: !svgedit.browser.isWebkit(), // Opera & Firefox 4 gives odd behavior w/images
