@@ -1,3 +1,4 @@
 *.swp
 *.un~
+.svn/
 .DS_store

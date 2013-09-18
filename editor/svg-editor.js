@@ -46,6 +46,8 @@
 					opacity: 1
 				},
 				initOpacity: 1,
+				baseStaticUrl: '',
+				iconFilePath: null,
 				imgPath: 'images/',
 				langPath: 'locale/',
 				extPath: 'extensions/',
@@ -67,7 +69,19 @@
 				gridColor: '#000',
 				baseUnit: 'px',
 				snappingStep: 10,
-				showRulers: true
+				showRulers: true,
+				palette: [
+				'#000000', '#3f3f3f', '#7f7f7f', '#bfbfbf', '#ffffff',
+				'#ff0000', '#ff7f00', '#ffff00', '#7fff00',
+				'#00ff00', '#00ff7f', '#00ffff', '#007fff',
+				'#0000ff', '#7f00ff', '#ff00ff', '#ff007f',
+				'#7f0000', '#7f3f00', '#7f7f00', '#3f7f00',
+				'#007f00', '#007f3f', '#007f7f', '#003f7f',
+				'#00007f', '#3f007f', '#7f007f', '#7f003f',
+				'#ffaaaa', '#ffd4aa', '#ffffaa', '#d4ffaa',
+				'#aaffaa', '#aaffd4', '#aaffff', '#aad4ff',
+				'#aaaaff', '#d4aaff', '#ffaaff', '#ffaad4'
+				]
 			},
 			uiStrings = Editor.uiStrings = {
 				common: {
@@ -167,6 +181,9 @@
 			$.extend(true, curConfig, opts);
 			if (opts.extensions) {
 				curConfig.extensions = opts.extensions;
+			}
+			if (opts.palette) {
+				curConfig.palette = opts.palette;
 			}
 		};
 
@@ -296,7 +313,10 @@
 			} else {
 				extFunc();
 			}
-			$.svgIcons(curConfig.imgPath + 'svg_edit_icons.svg', {
+			// Default icon path but allow override
+			var iconPath = curConfig.imgPath + 'svg_edit_icons.svg';
+			iconPath = (curConfig.iconFilePath !== null) ? curConfig.iconFilePath : iconPath;
+			$.svgIcons(iconPath, {
 				w:24, h:24,
 				id_match: false,
 				no_img: !svgedit.browser.isWebkit(), // Opera & Firefox 4 gives odd behavior w/images
@@ -496,19 +516,8 @@
 
 			Editor.canvas = svgCanvas = new $.SvgCanvas(document.getElementById('svgcanvas'), curConfig);
 			Editor.showSaveWarning = false;
-			var palette = [
-				'#000000', '#3f3f3f', '#7f7f7f', '#bfbfbf', '#ffffff',
-				'#ff0000', '#ff7f00', '#ffff00', '#7fff00',
-				'#00ff00', '#00ff7f', '#00ffff', '#007fff',
-				'#0000ff', '#7f00ff', '#ff00ff', '#ff007f',
-				'#7f0000', '#7f3f00', '#7f7f00', '#3f7f00',
-				'#007f00', '#007f3f', '#007f7f', '#003f7f',
-				'#00007f', '#3f007f', '#7f007f', '#7f003f',
-				'#ffaaaa', '#ffd4aa', '#ffffaa', '#d4ffaa',
-				'#aaffaa', '#aaffd4', '#aaffff', '#aad4ff',
-				'#aaaaff', '#d4aaff', '#ffaaff', '#ffaad4'
-				],
-				modKey = (svgedit.browser.isMac() ? 'meta+' : 'ctrl+'), // ⌘
+			var palette = curConfig.palette;
+			var modKey = (svgedit.browser.isMac() ? 'meta+' : 'ctrl+'), // ⌘
 				path = svgCanvas.pathActions,
 				undoMgr = svgCanvas.undoMgr,
 				Utils = svgedit.utilities,
@@ -1632,7 +1641,7 @@
 							var label = $('#g_title')[0];
 							label.value = title;
 							setInputWidth(label);
-							label.prop('disabled', el_name == 'use');
+							$(label).prop('disabled', el_name == 'use');
 						}
 					}
 					menu_items[(el_name === 'g' ? 'en' : 'dis') + 'ableContextMenuItems']('#ungroup');
@@ -2178,7 +2187,7 @@
 			};
 
 			Editor.addDropDown('#font_family_dropdown', function() {
-				$('#font_family').val($(this).text()).change();
+				$('#font_family').val($(this).css('font-family')).change();
 			});
 
 			Editor.addDropDown('#opacity_dropdown', function() {
@@ -3873,8 +3882,10 @@
 					{key: 'shift+P', fn: selectNext},
 					{key: [modKey+'up', true], fn: function(){zoomImage(2);}},
 					{key: [modKey+'down', true], fn: function(){zoomImage(.5);}},
-					{key: [modKey+']', true], fn: function(){moveUpDownSelected('Up');}},
-					{key: [modKey+'[', true], fn: function(){moveUpDownSelected('Down');}},
+					// On Mac - these are for some reason triggering JUST by pressing command (i.e. not with "]")
+					//          and furthermore only after going into text edit mode? Very strange - removing for now.
+					// {key: [modKey+']', true], fn: function(){moveUpDownSelected('Up');}},
+					// {key: [modKey+'[', true], fn: function(){moveUpDownSelected('Down');}},
 					{key: ['up', true], fn: function(){moveSelected(0,-1);}},
 					{key: ['down', true], fn: function(){moveSelected(0,1);}},
 					{key: ['left', true], fn: function(){moveSelected(-1,0);}},
