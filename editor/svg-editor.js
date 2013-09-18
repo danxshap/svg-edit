@@ -2187,7 +2187,7 @@
 			};
 
 			Editor.addDropDown('#font_family_dropdown', function() {
-				$('#font_family').val($(this).text()).change();
+				$('#font_family').val($(this).css('font-family')).change();
 			});
 
 			Editor.addDropDown('#opacity_dropdown', function() {
