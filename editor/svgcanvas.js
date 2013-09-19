@@ -2681,7 +2681,13 @@ var textActions = canvas.textActions = function() {
 
 	function selectAll(evt) {
 		setSelection(0, curtext.textContent.length);
-		$(this).unbind(evt);
+
+		// If there's an event passed in, it's from the triple-click set up in selectWord
+		// and it should be unbound. If there's no event (e.g. direct call to selectAll() in textActions.select,
+		// don't call unbind because that messes other shit up.
+		if(typeof evt !== 'undefined'){
+			$(this).unbind(evt);
+		}
 	}
 
 	function selectWord(evt) {
