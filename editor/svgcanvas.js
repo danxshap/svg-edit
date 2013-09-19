@@ -2681,7 +2681,13 @@ var textActions = canvas.textActions = function() {
 
 	function selectAll(evt) {
 		setSelection(0, curtext.textContent.length);
-		$(this).unbind(evt);
+
+		// If there's an event passed in, it's from the triple-click set up in selectWord
+		// and it should be unbound. If there's no event (e.g. direct call to selectAll() in textActions.select,
+		// don't call unbind because that messes other shit up.
+		if(typeof evt !== 'undefined'){
+			$(this).unbind(evt);
+		}
 	}
 
 	function selectWord(evt) {
@@ -6677,11 +6683,6 @@ var changeSelectedAttributeNoUndo = function(attr, newValue, elems) {
 		var elem = elems[i];
 		if (elem == null) continue;
 
-		// Go into "select" mode for text changes
-		if (current_mode === "textedit" && attr !== "#text" && elem.textContent.length) {
-			textActions.toSelectMode(elem);
-		}
-
 		// Set x,y vals on elements that don't have them
 		if ((attr === 'x' || attr === 'y') && no_xy_elems.indexOf(elem.tagName) >= 0) {
 			var bbox = getStrokedBBox([elem]);
@@ -6726,6 +6727,15 @@ var changeSelectedAttributeNoUndo = function(attr, newValue, elems) {
 				setHref(elem, newValue);
 			}
 			else elem.setAttribute(attr, newValue);
+
+			// Go into "select" mode for text changes
+			// NOTE: Important that this happens AFTER elem.setAttribute() or else attributes like
+			// font-size can get reset to their old value ultimately by updateContextPanel()
+			// after calling textActions.toSelectMode() below
+			if (current_mode === "textedit" && attr !== "#text" && elem.textContent.length) {
+				textActions.toSelectMode(elem);
+			}
+
 //			if (i==0)
 //				selectedBBoxes[0] = svgedit.utilities.getBBox(elem);
 			// Use the Firefox ffClone hack for text elements with gradients or
