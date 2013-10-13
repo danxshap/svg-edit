@@ -663,23 +663,51 @@
 </g>
 
 <g id="width">
-	<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-	  <path id="svg_6" d="m19,42.5l-7.5,7.5l7.5,7.5l0,-15zm0,7.5l62,0l0,-7.5l7.5,7.5l-7.5,7.5l0,-7.5" stroke-width="8" stroke="#000000" fill="#000000"/>
-	</svg>
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+  <path fill="#BABABB" d="M4.408,24.585l2.472,1.442c0.552,0.321,1.454,0.848,2.005,1.169l2.563,1.441
+    c0.551,0.323,1.093,0.063,1.093-0.575v-2.902c0-0.638,0-1.684,0-2.322v-2.902c0-0.638-0.542-0.898-1.093-0.576l-2.517,1.442
+    c-0.551,0.321-1.476,0.848-2.028,1.169l-2.483,1.442C3.868,23.737,3.857,24.263,4.408,24.585z"/>
+  <path fill="#BABABB" d="M43.592,24.585l-2.472,1.442c-0.552,0.321-1.454,0.848-2.005,1.169l-2.563,1.441
+    c-0.551,0.323-1.093,0.063-1.093-0.575v-2.902c0-0.638,0-1.684,0-2.322v-2.902c0-0.638,0.542-0.898,1.093-0.576l2.517,1.442
+    c0.551,0.321,1.476,0.848,2.028,1.169l2.483,1.442C44.132,23.737,44.143,24.263,43.592,24.585z"/>
+  <line fill="none" stroke="#BABABB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="41" y1="24" x2="8.511" y2="24"/>
+  </svg>
 </g>
 
 <g id="height">
-	<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-	  <path transform="rotate(90, 50, 50)" fill="#000000" stroke="#000000" stroke-width="8" d="m19,42.5l-7.5,7.5l7.5,7.5l0,-15zm0,7.5l62,0l0,-7.5l7.5,7.5l-7.5,7.5l0,-7.5" id="svg_6"/>
-	</svg>
+	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+  <path fill="#BABABB" d="M22.964,4.516l-1.442,2.472c-0.321,0.552-0.848,1.454-1.169,2.005l-1.441,2.563
+    c-0.323,0.551-0.063,1.093,0.575,1.093h2.902c0.638,0,1.684,0,2.322,0h2.902c0.638,0,0.898-0.542,0.576-1.093l-1.442-2.517
+    c-0.321-0.551-0.848-1.476-1.169-2.028l-1.442-2.483C23.812,3.976,23.286,3.965,22.964,4.516z"/>
+  <path fill="#BABABB" d="M22.964,43.7l-1.442-2.472c-0.321-0.552-0.848-1.454-1.169-2.005l-1.441-2.563
+    c-0.323-0.551-0.063-1.093,0.575-1.093h2.902c0.638,0,1.684,0,2.322,0h2.902c0.638,0,0.898,0.542,0.576,1.093l-1.442,2.517
+    c-0.321,0.551-0.848,1.476-1.169,2.028l-1.442,2.483C23.812,44.24,23.286,44.252,22.964,43.7z"/>
+  <line fill="none" stroke="#BABABB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.549" y1="41.108" x2="23.549" y2="8.62"/>
+  </svg>
 </g>
 
 <g id="c_radius">
-<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-  <rect stroke="#404040" fill="none" stroke-width="0.5" x="2.37501" y="2.4375" width="43.9375" height="43.9375" id="svg_1" rx="13" ry="13"/>
-  <path fill="none" stroke="#000000" d="m2.43674,15.88952l13.73722,0l0.08978,-13.46483m0.08978,14.08493" id="svg_3"/>
-  <line fill="none" stroke="#000000" x1="16.35107" y1="15.88934" x2="5.20504" y2="5.20504" id="svg_4" stroke-dasharray="2,2"/>
-</svg>
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+  <polyline fill="none" stroke="#676767" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+    37.143,4.094 37.143,38.774 4.175,38.774 "/>
+  <g>
+    <g>
+      
+        <line fill="none" stroke="#676767" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" x1="37.143" y1="38.774" x2="35.375" y2="37.006"/>
+      
+        <line fill="none" stroke="#676767" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5.6856,5.6856" x1="31.355" y1="32.986" x2="17.283" y2="18.914"/>
+      
+        <line fill="none" stroke="#676767" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" x1="15.273" y1="16.904" x2="13.505" y2="15.137"/>
+    </g>
+  </g>
+  <path fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+    M3.241,44.84v-7.778C3.241,18.339,18.42,3.16,37.143,3.16h7.271"/>
+  <path fill="none" stroke="#D0D2D3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+    M37.143,38.774"/>
+  </svg>
 </g>
 
 <g id="angle">

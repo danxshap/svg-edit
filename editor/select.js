@@ -53,9 +53,9 @@ svgedit.select.Selector = function(id, elem) {
 			'attr': {
 				'id': ('selectedBox' + this.id),
 				'fill': 'none',
-				'stroke': '#22C',
-				'stroke-width': '1',
-				'stroke-dasharray': '5,5',
+				'stroke': '#658af8',
+				'stroke-width': '0.5',
+				//'stroke-dasharray': '5,5',
 				// need to specify this so that the rect is not selectable
 				'style': 'pointer-events:none'
 			}
@@ -321,11 +321,12 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 
 	// add the corner grips
 	for (var dir in this.selectorGrips) {
+		
 		var grip = svgFactory_.createSVGElement({
 			'element': 'circle',
 			'attr': {
 				'id': ('selectorGrip_resize_' + dir),
-				'fill': '#22C',
+				'fill': '#658af8',
 				'r': gripRadius,
 				'style': ('cursor:' + dir + '-resize'),
 				// This expands the mouse-able area of the grips making them
@@ -336,6 +337,7 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 				'pointer-events': 'all'
 			}
 		});
+
 
 		$.data(grip, 'dir', dir);
 		$.data(grip, 'type', 'resize');
@@ -348,7 +350,7 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 			'element': 'line',
 			'attr': {
 				'id': ('selectorGrip_rotateconnector'),
-				'stroke': '#22C',
+				'stroke': '#658af8',
 				'stroke-width': '1'
 			}
 		})
@@ -359,9 +361,9 @@ svgedit.select.SelectorManager.prototype.initGroup = function() {
 			'element': 'circle',
 			'attr': {
 				'id': 'selectorGrip_rotate',
-				'fill': 'lime',
+				'fill': '#FFFFFF',
 				'r': gripRadius,
-				'stroke': '#22C',
+				'stroke': '#658af8',
 				'stroke-width': 2,
 				'style': 'cursor:url(' + config_.imgPath + 'rotate.png) 12 12, auto;'
 			}
