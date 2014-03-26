@@ -6274,6 +6274,39 @@ this.setItalic = function(i) {
 	}
 };
 
+// Function: getUnderline
+// Check whether selected element is underlined or not
+//
+// Returns:
+// Boolean indicating whether or not element is underlined
+this.getUnderline = function() {
+	// should only have one element selected
+	var selected = selectedElements[0];
+	if (selected != null && selected.tagName  == "text" &&
+		selectedElements[1] == null)
+	{
+		return (selected.getAttribute("text-decoration") == "underline");
+	}
+	return false;
+};
+
+// Function: setUnderline
+// Make the selected element underlined or not
+//
+// Parameters:
+// u - Boolean indicating underlined (true) or not (false)
+this.setUnderline = function(u) {
+	var selected = selectedElements[0];
+	if (selected != null && selected.tagName  == "text" &&
+		selectedElements[1] == null)
+	{
+		changeSelectedAttribute("text-decoration", u ? "underline" : "none");
+	}
+	if (!selectedElements[0].textContent) {
+		textActions.setCursor();
+	}
+};
+
 // Function: getFontFamily
 // Returns the current font family
 this.getFontFamily = function() {

@@ -1622,6 +1622,11 @@
 							} else {
 								$('#tool_bold').removeClass('push_button_pressed').addClass('tool_button');
 							}
+							if (svgCanvas.getUnderline()) {
+								$('#tool_underline').addClass('push_button_pressed').removeClass('tool_button');
+							} else {
+								$('#tool_underline').removeClass('push_button_pressed').addClass('tool_button');
+							}
 							$('#font_family').val(elem.getAttribute('font-family'));
 							$('#font_size').val(elem.getAttribute('font-size'));
 							$('#text').val(elem.textContent);
@@ -2521,6 +2526,12 @@
 
 			var clickItalic = function() {
 				svgCanvas.setItalic( !svgCanvas.getItalic() );
+				updateContextPanel();
+				return false;
+			};
+
+			var clickUnderline = function() {
+				svgCanvas.setUnderline( !svgCanvas.getUnderline() );
 				updateContextPanel();
 				return false;
 			};
@@ -3869,6 +3880,7 @@
 		// 			{sel: '#tools_ellipse_show', fn: clickEllipse, evt: 'click'},
 					{sel: '#tool_bold', fn: clickBold, evt: 'mousedown'},
 					{sel: '#tool_italic', fn: clickItalic, evt: 'mousedown'},
+					{sel: '#tool_underline', fn: clickUnderline, evt: 'mousedown'},
 					{sel: '#sidepanel_handle', fn: toggleSidePanel, key: ['X']},
 					{sel: '#copy_save_done', fn: cancelOverlays, evt: 'click'},
 
